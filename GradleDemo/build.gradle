@@ -1,0 +1,28 @@
+	apply plugin : 'application'
+
+repositories{
+		mavenCentral()
+}
+
+dependencies{
+		implementation "joda-time:joda-time:2.3"
+}
+
+
+
+mainClassName= 'demo.HelloGradle'
+
+task hello{
+	description 'Greets you'
+	println 'Hello!'
+}
+
+task gitPush(type: Exec) {
+    description 'Pushs git.'
+    commandLine "git", "push"
+}
+
+task gitPull(type: Exec) {
+    description 'Pulls git.'
+    commandLine "git", "pull"
+}
