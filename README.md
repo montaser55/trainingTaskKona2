@@ -1,0 +1,1 @@
+# trainingTaskKona2
